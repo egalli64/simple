@@ -1,2 +1,2 @@
 # simple
-Simple Java Project that uses Maven as building tool
+Simple Java Maven Project
