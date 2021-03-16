@@ -4,14 +4,18 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Main {
-    private static final Logger LOG = LoggerFactory.getLogger(Main.class);
+    private static final Logger log = LoggerFactory.getLogger(Main.class);
 
     public static void main(String[] args) {
         System.out.println("Hello " + getLoggerClassName());
-        LOG.info("Hello");
+        log.info("Hello");
     }
     
     public static String getLoggerClassName() {
-        return LOG.getClass().getName();
+        return log.getClass().getName();
+    }
+
+    public static void anUnimplementedMethod() {
+        throw new UnsupportedOperationException(); 
     }
 }
