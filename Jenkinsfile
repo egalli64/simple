@@ -21,8 +21,8 @@ pipeline {
 
     stage('Production') {
       steps {
-        echo 'Deploy Simple to Production'
         input 'Deploy in Production?'
+        echo 'Deploy Simple to Production'
       }
     }
 
