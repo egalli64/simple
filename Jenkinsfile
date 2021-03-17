@@ -16,13 +16,13 @@ pipeline {
     stage('Stage') {
       steps {
         echo 'Deploy Simple to Stage'
-        input 'Deploy to production?'
       }
     }
 
     stage('Production') {
       steps {
         echo 'Deploy Simple to Production'
+        input 'Deploy in Production?'
       }
     }
 
