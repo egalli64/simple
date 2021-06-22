@@ -1,4 +1,4 @@
-package simple;
+package com.example.simple;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -10,7 +10,7 @@ class MainTest {
     @Test
     void getLoggerClassName() {
         String actual = Main.getLoggerClassName();
-        assertThat(actual, is("ch.qos.logback.classic.Logger"));
+        assertThat(actual, is("org.apache.logging.log4j.core.Logger"));
     }
 
     @Test
